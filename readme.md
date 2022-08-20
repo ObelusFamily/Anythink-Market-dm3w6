@@ -10,4 +10,9 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+- Download and install Docker.
+- Verify docker was successfully install: `docker -v` and `docker-compose -v`
+- From the root of the project run `docker-compose up` to start the project.
+- Go to http://localhost:3000/api/ping to verify BE is working.
+- Go to http://localhost:3001/register to verify FE is working.
+
