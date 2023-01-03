@@ -40,7 +40,7 @@ router.get('/', auth.optional, function (req, res, next) {
   var query = {};
   var limit = 100;
   var offset = 0;
-  const title = req.query.title.toLowerCase() || '';
+  const title = req.query?.title?.toLowerCase() || '';
 
   if (typeof req.query.limit !== 'undefined') {
     limit = req.query.limit;
